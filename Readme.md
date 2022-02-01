@@ -8,7 +8,7 @@
 
 * [Program.cs](./CS/AddSignatureField/Program.cs) (VB: [Program.vb](./VB/AddSignatureField/Program.vb))
 <!-- default file list end -->
-# How to add a signature field to a document 
+# PDF Document API - Add a Signature Field to a Document 
 
 
 This example shows how to create a signature field and add it to a PDF document.
