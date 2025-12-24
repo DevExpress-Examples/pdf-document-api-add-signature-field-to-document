@@ -6,7 +6,7 @@ using System.Runtime.Versioning;
 namespace AddSignatureField {
     class Program
     {
-        [SupportedOSPlatform("windows6.1")]
+        [SupportedOSPlatform("windows")]
         static void Main(string[] args) {
 
             using (PdfDocumentProcessor processor = new PdfDocumentProcessor()) {
@@ -25,7 +25,7 @@ namespace AddSignatureField {
             Process.Start(new ProcessStartInfo("..\\..\\..\\Result.pdf") { UseShellExecute = true });
         }
 
-        [SupportedOSPlatform("windows6.1")]
+        [SupportedOSPlatform("windows")]
         static void DrawSignatureField(PdfGraphics graphics) {
 
             // Create a signature field specifying its name and location.
