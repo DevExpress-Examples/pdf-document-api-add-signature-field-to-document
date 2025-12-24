@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.Document.Processor" Version="24.2.12" />
-    <PackageReference Include="DevExpress.Drawing.Skia" Version="24.2.12" />
-    <PackageReference Include="DevExpress.Pdf.Drawing" Version="24.2.12" />
+    <PackageReference Include="DevExpress.Document.Processor" Version="24.2.*" />
+    <PackageReference Include="DevExpress.Drawing.Skia" Version="24.2.*" />
+    <PackageReference Include="DevExpress.Pdf.Drawing" Version="24.2.*" />
   </ItemGroup>
 
 </Project>
