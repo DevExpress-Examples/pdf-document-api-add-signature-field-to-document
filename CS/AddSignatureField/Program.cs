@@ -1,14 +1,18 @@
 ﻿using DevExpress.Pdf;
+using System.Diagnostics;
 using System.Drawing;
+using System.Runtime.Versioning;
 
 namespace AddSignatureField {
-    class Program {
+    class Program
+    {
+        [SupportedOSPlatform("windows6.1")]
         static void Main(string[] args) {
 
             using (PdfDocumentProcessor processor = new PdfDocumentProcessor()) {
 
                 // Create an empty document. 
-                processor.CreateEmptyDocument("..\\..\\Result.pdf");
+                processor.CreateEmptyDocument("..\\..\\..\\Result.pdf");
 
                 // Create graphics and draw a signature field.
                 using (PdfGraphics graphics = processor.CreateGraphics()) {
@@ -18,15 +22,17 @@ namespace AddSignatureField {
                     processor.RenderNewPage(PdfPaperSize.Letter, graphics);
                 }
             }
+            Process.Start(new ProcessStartInfo("..\\..\\..\\Result.pdf") { UseShellExecute = true });
         }
 
+        [SupportedOSPlatform("windows6.1")]
         static void DrawSignatureField(PdfGraphics graphics) {
 
             // Create a signature field specifying its name and location.
             PdfGraphicsAcroFormSignatureField signature = new PdfGraphicsAcroFormSignatureField("signature", new RectangleF(0, 20, 120, 130));
 
             // Specify a content image for the signature field.
-            Image image = Image.FromFile("..\\..\\Image.png");
+            Image image = Image.FromFile("..\\..\\..\\Image.png");
             signature.ContentImage = image;            
      
             // Add the field to the document.
