@@ -4,17 +4,14 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Program.cs](./CS/AddSignatureField/Program.cs) (VB: [Program.vb](./VB/AddSignatureField/Program.vb))
-<!-- default file list end -->
 # PDF Document API - Add a Signature Field to a Document 
-
 
 This example shows how to create a signature field and add it to a PDF document.
 
-<br/>
+## Files to Review
+
+* [Program.cs](./CS/AddSignatureField/Program.cs) (VB: [Program.vb](./VB/AddSignatureField/Program.vb))
 
 
 <!-- feedback -->
